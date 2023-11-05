@@ -1,0 +1,603 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Carlos Montesino Fernando</title><style>
+    /* cspell:disable-file */
+    /* webkit printing magic: print all background colors */
+    html {
+        -webkit-print-color-adjust: exact;
+    }
+    * {
+        box-sizing: border-box;
+        -webkit-print-color-adjust: exact;
+    }
+    
+    html,
+    body {
+        background-color: #272727;
+        margin: 0;
+        padding: 0;
+    }
+    @media only screen {
+        body {
+            margin: 2em auto;
+            max-width: 900px;
+            color: rgb(223, 223, 223);
+        }
+    }
+    
+    body {
+        line-height: 2;
+        text-align: justify;
+    }
+    
+    a,
+    a.visited {
+        color: inherit;
+        text-decoration: underline;
+    }
+    
+    .pdf-relative-link-path {
+        font-size: 80%;
+        color: #444;
+    }
+    
+    h1,
+    h2,
+    h3 {
+        letter-spacing: -0.01em;
+        line-height: 1.2;
+        font-weight: 600;
+        margin-bottom: 0;
+    }
+    
+    .page-title {
+        font-size: 2.5rem;
+        font-weight: 700;
+        margin-top: 0;
+        margin-bottom: 0.75em;
+    }
+    
+    h1 {
+        font-size: 1.875rem;
+        margin-top: 1.875rem;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+        margin-top: 1.5rem;
+    }
+    
+    h3 {
+        font-size: 1.25rem;
+        margin-top: 1.25rem;
+    }
+    
+    .source {
+        border: 1px solid #ddd;
+        border-radius: 3px;
+        padding: 1.5em;
+        word-break: break-all;
+    }
+    
+    .callout {
+        border-radius: 3px;
+        padding: 1rem;
+    }
+    
+    figure {
+        margin: 1.25em 0;
+        page-break-inside: avoid;
+    }
+    
+    figcaption {
+        opacity: 0.5;
+        font-size: 85%;
+        margin-top: 0.5em;
+    }
+    
+    mark {
+        background-color: transparent;
+    }
+    
+    .indented {
+        padding-left: 1.5em;
+    }
+    
+    hr {
+        background: transparent;
+        display: block;
+        width: 100%;
+        height: 1px;
+        visibility: visible;
+        border: none;
+        border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+    }
+    
+    img {
+        max-width: 100%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 5px;
+        padding-bottom: 8px;
+    }
+    
+    @media only print {
+        img {
+            max-height: 100vh;
+            object-fit: contain;
+        }
+    }
+    
+    @page {
+        margin: 1in;
+    }
+    
+    .collection-content {
+        font-size: 0.875rem;
+    }
+    
+    .column-list {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .column {
+        padding: 0 1em;
+    }
+    
+    .column:first-child {
+        padding-left: 0;
+    }
+    
+    .column:last-child {
+        padding-right: 0;
+    }
+    
+    .table_of_contents-item {
+        display: block;
+        font-size: 0.875rem;
+        line-height: 1.3;
+        padding: 0.125rem;
+    }
+    
+    .table_of_contents-indent-1 {
+        margin-left: 1.5rem;
+    }
+    
+    .table_of_contents-indent-2 {
+        margin-left: 3rem;
+    }
+    
+    .table_of_contents-indent-3 {
+        margin-left: 4.5rem;
+    }
+    
+    .table_of_contents-link {
+        text-decoration: none;
+        opacity: 0.7;
+        border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+    }
+    
+    table,
+    th,
+    td {
+        border: 1px solid rgba(55, 53, 47, 0.09);
+        border-collapse: collapse;
+    }
+    
+    table {
+        border-left: none;
+        border-right: none;
+    }
+    
+    th,
+    td {
+        font-weight: normal;
+        padding: 0.25em 0.5em;
+        line-height: 1.5;
+        min-height: 1.5em;
+        text-align: left;
+    }
+    
+    th {
+        color: rgba(55, 53, 47, 0.6);
+    }
+    
+    ol,
+    ul {
+        margin: 0;
+        margin-block-start: 0.6em;
+        margin-block-end: 0.6em;
+    }
+    
+    li > ol:first-child,
+    li > ul:first-child {
+        margin-block-start: 0.6em;
+    }
+    
+    ul > li {
+        list-style: disc;
+    }
+    
+    ul.to-do-list {
+        padding-inline-start: 0;
+    }
+    
+    ul.to-do-list > li {
+        list-style: none;
+    }
+    
+    .to-do-children-checked {
+        text-decoration: line-through;
+        opacity: 0.375;
+    }
+    
+    ul.toggle > li {
+        list-style: none;
+    }
+    
+    ul {
+        padding-inline-start: 1.7em;
+    }
+    
+    ul > li {
+        padding-left: 0.1em;
+    }
+    
+    ol {
+        padding-inline-start: 1.6em;
+    }
+    
+    ol > li {
+        padding-left: 0.2em;
+    }
+    
+    .mono ol {
+        padding-inline-start: 2em;
+    }
+    
+    .mono ol > li {
+        text-indent: -0.4em;
+    }
+    
+    .toggle {
+        padding-inline-start: 0em;
+        list-style-type: none;
+    }
+    
+    /* Indent toggle children */
+    .toggle > li > details {
+        padding-left: 1.7em;
+    }
+    
+    .toggle > li > details > summary {
+        margin-left: -1.1em;
+    }
+    
+    .selected-value {
+        display: inline-block;
+        padding: 0 0.5em;
+        background: rgba(206, 205, 202, 0.5);
+        border-radius: 3px;
+        margin-right: 0.5em;
+        margin-top: 0.3em;
+        margin-bottom: 0.3em;
+        white-space: nowrap;
+    }
+    
+    .collection-title {
+        display: inline-block;
+        margin-right: 1em;
+    }
+    
+    .page-description {
+        margin-bottom: 2em;
+    }
+    
+    .simple-table {
+        margin-top: 1em;
+        font-size: 0.875rem;
+        empty-cells: show;
+    }
+    .simple-table td {
+        height: 29px;
+        min-width: 120px;
+    }
+    
+    .simple-table th {
+        height: 29px;
+        min-width: 120px;
+    }
+    
+    .simple-table-header-color {
+        background: rgb(247, 246, 243);
+        color: black;
+    }
+    .simple-table-header {
+        font-weight: 500;
+    }
+    
+    time {
+        opacity: 0.5;
+    }
+    
+    .icon {
+        display: inline-block;
+        max-width: 1.2em;
+        max-height: 1.2em;
+        text-decoration: none;
+        vertical-align: text-bottom;
+        margin-right: 0.5em;
+    }
+    
+    img.icon {
+        border-radius: 3px;
+    }
+    
+    .user-icon {
+        width: 1.5em;
+        height: 1.5em;
+        border-radius: 100%;
+        margin-right: 0.5rem;
+    }
+    
+    .user-icon-inner {
+        font-size: 0.8em;
+    }
+    
+    .text-icon {
+        border: 1px solid #000;
+        text-align: center;
+    }
+    
+    .page-cover-image {
+        display: block;
+        object-fit: cover;
+        width: 100%;
+        max-height: 30vh;
+    }
+    
+    .page-header-icon {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+    }
+    
+    .page-header-icon-with-cover {
+        margin-top: -0.72em;
+        margin-left: 0.07em;
+    }
+    
+    .page-header-icon img {
+        border-radius: 3px;
+    }
+    
+    .link-to-page {
+        margin: 1em 0;
+        padding: 0;
+        border: none;
+        font-weight: 500;
+    }
+    
+    p > .user {
+        opacity: 0.5;
+    }
+    
+    td > .user,
+    td > time {
+        white-space: nowrap;
+    }
+    
+    input[type="checkbox"] {
+        transform: scale(1.5);
+        margin-right: 0.6em;
+        vertical-align: middle;
+    }
+    
+    p {
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+    }
+    
+    .image {
+        border: none;
+        margin: 1.5em 0;
+        padding: 0;
+        border-radius: 0;
+        text-align: center;
+    }
+    
+    .code,
+    code {
+        background: rgba(135, 131, 120, 0.15);
+        border-radius: 3px;
+        padding: 0.2em 0.4em;
+        border-radius: 3px;
+        font-size: 85%;
+        tab-size: 2;
+    }
+    
+    code {
+        color: #eb5757;
+    }
+    
+    .code {
+        padding: 1.5em 1em;
+    }
+    
+    .code-wrap {
+        white-space: pre-wrap;
+        word-break: break-all;
+    }
+    
+    .code > code {
+        background: none;
+        padding: 0;
+        font-size: 100%;
+        color: inherit;
+    }
+    
+    blockquote {
+        font-size: 1.25em;
+        margin: 1em 0;
+        padding-left: 1em;
+        border-left: 3px solid rgb(55, 53, 47);
+    }
+    
+    .bookmark {
+        text-decoration: none;
+        max-height: 8em;
+        padding: 0;
+        display: flex;
+        width: 100%;
+        align-items: stretch;
+    }
+    
+    .bookmark-title {
+        font-size: 0.85em;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        height: 1.75em;
+        white-space: nowrap;
+    }
+    
+    .bookmark-text {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .bookmark-info {
+        flex: 4 1 180px;
+        padding: 12px 14px 14px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+    .bookmark-image {
+        width: 33%;
+        flex: 1 1 180px;
+        display: block;
+        position: relative;
+        object-fit: cover;
+        border-radius: 1px;
+    }
+    
+    .bookmark-description {
+        color: rgba(55, 53, 47, 0.6);
+        font-size: 0.75em;
+        overflow: hidden;
+        max-height: 4.5em;
+        word-break: break-word;
+    }
+    
+    .bookmark-href {
+        font-size: 0.75em;
+        margin-top: 0.25em;
+    }
+    </style>
+<body>
+<h1 id="a02-creaci-n-de-un-perfil-sock-puppet">A02. Creación de un Perfil Sock Puppet</h1>
+<h2 id="introducci-n">Introducción</h2>
+<p>Esta actividad tiene como objetivo la creación de un Sock Puppet, conocida coloquialmente como una cuenta falsa. Con el objetivo de que el perfil sea creíble y detallado. Además de documentará el uso de herramientas y la lógica de cada paso realizado.</p>
+<p>Entre los pasos tenemos:</p>
+<ol>
+<li><p><strong>Preparación de la Máquina Virtual</strong>:</p>
+<ul>
+<li>Configura una máquina virtual limpia. Asegúrate de que no tenga ningún vínculo con tus datos personales o actividades anteriores.</li>
+<li>Instala herramientas para proteger tu identidad (VPN, proxies, etc.).</li>
+</ul>
+</li>
+<li><p><strong>Creación del Sock Puppet</strong>:</p>
+<ul>
+<li>Elige la/s plataforma/s (redes sociales, foros, etc.) para crear tu Sock Puppet. Ojo, un pérfil no será mas efectivo por tener cuenta en todas las redes sociales que se nos ocurran, sino por tener una identidad digital.</li>
+<li>Desarrolla una identidad completa (nombre, edad, intereses, etc.) basada en las pautas vistas en clase.</li>
+<li>Añade detalles y elementos que creas necesarios para hacer tu perfil más creíble.</li>
+</ul>
+</li>
+<li><p><strong>Actividad en la plataforma o redes sociales</strong></p>
+<ul>
+<li>Publica contenido, participa en discusiones o realiza otras actividades que una persona real realizaría.</li>
+<li>Interactúa en la plataforma de manera coherente con tu identidad falsa.</li>
+</ul>
+</li>
+<li><p><strong>Documentación</strong>:</p>
+<ul>
+<li>Registra tus pasos y decisiones durante la creación y manejo del Sock Puppet.</li>
+</ul>
+</li>
+</ol>
+<h2 id="-qu-es-exactamente-un-sock-puppet-">¿Qué es exactamente un sock puppet?</h2>
+<p>Un &quot;sock puppet&quot; se refiere a una identidad falsa creada en línea, generalmente usada para engañar, manipular o influenciar las percepciones o discusiones en línea. Este término se usa comúnmente en foros, redes sociales y otros espacios de discusión en línea. </p>
+<h2 id="-qu-usos-se-le-puede-dar-a-este-tipo-de-identidades-">¿Qué usos se le puede dar a este tipo de identidades?</h2>
+<ol>
+<li><p><strong>Promoción</strong>: Un autor puede crear una cuenta falsa para elogiar su propio trabajo y dar la impresión de que tiene más apoyo o admiradores de lo que realmente tiene.</p>
+</li>
+<li><p><strong>Manipulación</strong>: Una persona puede usar múltiples identidades en línea para influir en la opinión pública, reforzar un punto de vista o atacar a un oponente. Al hacerlo, pueden hacer que parezca que hay más personas que apoyan su perspectiva de lo que realmente hay.</p>
+</li>
+<li><p><strong>Evadir bloqueos</strong>: Si alguien es bloqueado o prohibido en un foro o plataforma en línea debido a un comportamiento no deseado, puede crear una cuenta de sock puppet para regresar y continuar participando.</p>
+</li>
+<li><p><strong>Molestar/trollear</strong>: Algunas personas crean sock puppets simplemente para molestar o provocar a otros en línea sin que su identidad principal sea responsable.</p>
+</li>
+<li><p><strong>Infiltración</strong>: Este tipo de cuentas pueden usarse para llegar a sitios privados que requieren de perfiles muy exactos, con el objetivo de extraer información de ese grupo o comunidad.</p>
+</li>
+</ol>
+<h2 id="-c-mo-he-creado-mi-propio-sock-puppet-">¿Cómo he creado mi propio sock puppet?</h2>
+<h3 id="herramientas-usadas">Herramientas usadas</h3>
+<p>Entre las herramientas usadas tengo la siguientes:</p>
+<ul>
+<li><a href="&quot;https://thispersondoesnotexist.com/&quot;">This-person-does-not-exist</a>  --- Con esta web hemos generado al cara de nuestra identidad ficticia.</li>
+<li><a href="https://www.fakenamegenerator.com/">Fake-name-generator</a> --- Aquí hemos obtenido detalles completos sobre la identidad, se nos genera un Nombre, Apellidos, edad, vivienda, email etc. de forma aleatoria para tener una base sobre la que crear nuestro perfil.</li>
+<li><a href="https://www.hotspotshield.com/es/">Hotspot Shield Basic</a> --- Este es el servicio de VPN gratuito que usaremos, está bastante bien elaborado y nos permite un tráfico de 500MB diarios.</li>
+<li>Windows 10 --- El sistema que usaremos.</li>
+<li>Virt manager --- El software virtualizador.</li>
+<li>Twitter --- La plataforma elegida para nuestra identidad.</li>
+</ul>
+<h3 id="proceso-de-creaci-n-y-ejemplos-de-uso">Proceso de creación y ejemplos de uso</h3>
+<p>Empezamos con la creación de una identidad con la herramienta <a href="https://www.fakenamegenerator.com/">Fake-name-generator</a> donde he especificado unas opciones, como que sea de Reino Unido y que tenga entre 19 y 25 años. Tras esto se nos genera el siguiente perfil:</p>
+<p><img src="img/1.png" alt="Primera foto"><img src="img/2.png" alt="Primera foto"></p>
+<p>Lo que vamos a usar de esta parte es el nombre, el email, la vivienda y la fecha de nacimiento, aunque conservaremos esta información por si puede ser útil en el futuro. Tras esto he buscado una cara que pueda adecuarse al perfil creado, encuentro el siguiente:</p>
+<p><img src="img/13.png" alt="Primera foto"></p>
+<p>Como el fondo de la imagen se ve muy alterado debido a que está hecho por una IA, lo quito usando una herramineta online. Tras esto empezamos con la isntlación de un sistema Windows 10 en una máquina virtual, donde tras la instalación cambiaremos el idioma del sistema completamente al inglés, ya que fallé seleccionando una ISO con el idioma español.</p>
+<p><img src="img/3.png" alt="Primera foto"></p>
+<p>Seleccionamos todas las opciones intentando dar la menos información posible sobre el dispositivo, cuando nos hacen preguntas como la superior empiezo a crear más detalles de la persona, como que su primera mascota se llamaba Max y que nación en Liverpool, más concretamente en el siguiente hospital:</p>
+<p><img src="img/4.png" alt="Primera foto"></p>
+<p>Cuando la instalación del sistema ha acabado cambiamos el diioma entero del sistema a inglés y nos descargamos <a href="https://www.hotspotshield.com/es/">Hotspot Shield Basic</a>.</p>
+<p><img src="img/20.png" alt="Primera foto">
+<img src="img/5.png" alt="Primera foto"></p>
+<p>La instalación resulta ser sencilla y no necesitamos cuentas. Tras activarla obtenemos un ip de EEUU. Concretamente el estado de Carolina del Sur. Podríamos cambiarlo, pero vamos a dejarlo así, prefiero interactuar con personas de Reino Unido estando en EEUU, de forma que podamos saltar confirmaciones y quedadas en físico y poder falsificar este tipo de información de forma digital.</p>
+<p><img src="img/8.png" alt="Primera foto"></p>
+<p>A pesar de que nuestra identidad ha nacido en Reino Unido, actualmente vive en Estados Unidos, ya que su padre encontró un mejor trabajo allí. Actualmente está estudiando Ingeniería Informática en la universidad de carolina del sur.</p>
+<p>Ahora pasamos a la creación de una red social. Para ello vamos a usar el email que nos proporcionó la página anterior y lo activaremos, lo cual se hace de forma automática al hacer click en el enlace. Usaremos este email para registrarnos. La red social elegida es twitter, esta elección la he hecho en base a que es una red social donde no se ve raro que un usuario suba fotos suyas de forma común, además tiene funcionalidades que permiten hacer el perfil más real y conectar con más gente, como la posibilidad de unirte a comunidades.</p>
+<p><img src="img/9.png" alt="Primera foto"></p>
+<p>Es conveniente cambiar este email cuanto antes y pasarlo a una cuenta de gmail, pero para ello deberíamos realizar el proceso de adquirir un teléfono desechable. Por ahora con esto podemos avanzar. Recibiremos la confirmación de la creación de la cuenta al email falso:</p>
+<p><img src="img/10.png" alt="Primera foto"></p>
+<p>Ahora nos daremos cuenta de que las alarmas de twitter saltan ya que detectan que nuestra cuenta podría ser un bot, por lo que de forma periódica nos van a hacer comprobaciones del estilo Captcha.</p>
+<p><img src="img/12.png" alt="Primera foto"></p>
+<p>Una vez creamos nuestro perfil, he decidido darle una temática pra aumentar la credibilidad, nuestra identidad falsa tiene otra característica más, es un gran aficionado del Liverpool, además tiene intereses en los e-sports, especialmente en el videojuego CS2, también seguira cuentas de humor para gente joven. Para asentar todo esto, creamos una biografía acorde con sus gustos y nos queda algo así:</p>
+<p><img src="img/15.png" alt="Primera foto"></p>
+<p>Ahora empezamos a seguir cuentas de interés y unirnos a comunidades para reforzar los gustos que hemos indicado.</p>
+<p><img src="img/18.png" alt="Primera foto">
+<img src="img/19.png" alt="Primera foto"></p>
+<p>Ahora empezamos a hacer interacciones con los post de estas cuentas y muchas más. Entre las interacciones tenemos comentarios a la cuenta oficial del Liverpool, post sobre el siguiente partido y las espectativas que hay, mostrar cierto desapego al equipo Tottenham debido a las circunstancias que rodean la liga, comentarios en los post de equipos Ingleses de CS2, como Into The Breach, teniendo en cuenta que nuestro personaje está en Estados Unidos,  también tenemos comentarios sobre la situación del fentanilo y sobre problemas que está teniendo actualmente la casa blanca con protestantes pro-Palestina. El objetivo de todo esto es hacer ver al público que nuestra identidad tiene ciertas aficiones y preocupaciones generales y que pueden ser realistas.</p>
+<p><img src="img/16.png" alt="Primera foto">
+<img src="img/21.png" alt="Primera foto"></p>
+<p>Tras todo este proceso hemos conseguido nuestro primer seguidor, siende este la ceunta de club de fans del Liverpool.</p>
+<p><img src="img/25.png" alt="Primera foto"></p>
+<h3 id="resumen-de-la-identidad">Resumen de la identidad</h3>
+<p>Tras todo este proceso podemos resumir nuestra falsa identidad en estos puntos:</p>
+<ul>
+<li>Sam L. Kerner</li>
+<li>19 años(13/11/2003) Scorpio</li>
+<li>Nació en Liverpool, vivió unos años en UK y ahora vive en EEUU</li>
+<li>Aficiones<ul>
+<li>Futbol, concretamente el Liverpool</li>
+<li>e-sports</li>
+<li>memes</li>
+</ul>
+</li>
+<li>Tiene ciertas preocupaciones sobre la actualidad</li>
+<li>Estudia una Ingeniería Informática</li>
+<li>Tiene preocupaciones sobre política y el estado de la sociedad</li>
+</ul>
+<h3 id="c-mo-deber-a-de-continuar">Cómo debería de continuar</h3>
+<p>El siguiente paso sería la adquisición de un número de teléfono desechable, con el que conseguir una cuenta de gmail, y con ella poder crear múltiples cuentas sincronizadas con la misma. Creación de otras redes sociales, un currículum, subir fotos editadas por IA que parezcan creíbles y relacionarlas con historias inventadas pero verosímiles etc.</p>
+</body>
