@@ -20,6 +20,7 @@ SELECT userId, password FROM users WHERE username="campo usuario del formulario"
 | La consulta que ejecuta es                          | SELECT userId, password FROM users WHERE username = """ |
 | Los campos del formulario usados en la consulta son | User                                                    |
 | Los campos no usados en la consulta son             | Password                                                |
+
 **b) Gracias a la SQL Injection del apartado anterior, sabemos que este formulario es vulnerable y conocemos el nombre de los campos de la tabla “users”. Para tratar de impersonar a un usuario, nos hemos descargado un diccionario que contiene algunas de las contraseñas más utilizadas (se listan a continuación):**
 
 La lógica usada aqui es decir que seleccione un usuario cuyo username está vacío O(OR) su contraseña sea alguna de las mencionadas, por lo que:
